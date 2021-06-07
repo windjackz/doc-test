@@ -1,41 +1,48 @@
-Template
-========
+readthedocs-sphinx-search
+=========================
 
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+|pypi| |docs| |license| |build-status|
 
-Look how easy it is to use:
+`Sphinx`_ extension to enable *search as you type* within a full-page search UI for docs hosted on `Read the Docs`_.
+Try it at https://readthedocs-sphinx-search.readthedocs.io/en/latest/?rtd_search=testing.
 
-    import project
-    # Get your stuff done
-    project.do_stuff()
-
-Features
---------
-
-- Be awesome
-- Make things faster
+.. _Sphinx: https://www.sphinx-doc.org/
+.. _Read the Docs: https://readthedocs.org/
 
 Installation
 ------------
 
-Install $project by running:
+.. code-block:: bash
 
-    install project
+   pip install readthedocs-sphinx-search
 
-Contribute
-----------
 
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
+Configuration
+-------------
 
-Support
--------
+Add this extension in your ``conf.py`` file as:
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
+.. code-block:: python
 
-License
--------
+   extensions = [
+    # ... other extensions here
+    'sphinx_search.extension',
+   ]
 
-The project is licensed under the BSD license.
+
+.. |docs| image:: https://readthedocs.org/projects/readthedocs-sphinx-search/badge/?version=latest
+   :alt: Documentation Status
+   :target: https://readthedocs-sphinx-search.readthedocs.io/en/latest/?badge=latest
+
+.. |license| image:: https://img.shields.io/github/license/readthedocs/readthedocs-sphinx-search.svg
+   :target: LICENSE
+   :alt: Repository license
+
+.. |build-status| image:: https://circleci.com/gh/readthedocs/readthedocs-sphinx-search.svg?style=svg
+   :alt: Build status
+   :target: https://circleci.com/gh/readthedocs/readthedocs-sphinx-search
+
+
+.. |pypi| image:: https://img.shields.io/pypi/v/readthedocs-sphinx-search.svg
+   :target: https://pypi.python.org/pypi/readthedocs-sphinx-search
+   :alt: PyPI Version

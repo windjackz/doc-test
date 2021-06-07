@@ -1,25 +1,15 @@
-.. Read the Docs Template documentation master file, created by
-   sphinx-quickstart on Tue Aug 26 14:19:49 2014.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to Read the Docs Template's documentation!
-==================================================
-
-Contents:
+.. include:: ../README.rst
 
 .. toctree::
    :maxdepth: 2
-   :glob:
+   :caption: Table of Contents
 
-   *
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   installation
+   features
+   configuration
+   customization
+   development
+   testing
+   js-api-reference
+   get-involved
+   changelog
